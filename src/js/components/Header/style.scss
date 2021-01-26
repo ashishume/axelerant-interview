@@ -1,0 +1,73 @@
+@import "../../../styles";
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  z-index: 99;
+  @media only screen and( max-width:768px) {
+    width: 100%;
+  }
+}
+
+.logo {
+  flex-grow: 9;
+  padding: 0 20px;
+  .company_logo_primary {
+    color: #fff;
+    font-family: $font_family;
+    font-size: $heading;
+    font-weight: 900;
+  }
+  .company_logo_secondary {
+    @extend .company_logo_primary;
+    color: $primary_background_color;
+  }
+}
+
+.navbar {
+  margin: 0 50px;
+  .nav_items {
+    color: #fff;
+    font-size: $sub_heading;
+    font-family: $font_family;
+    padding: 0 20px;
+  }
+  .get_in_touch {
+    @extend .nav_items;
+    background-color: $primary_background_color;
+    padding: 10px;
+    border-radius: 50px;
+    height: 50px;
+  }
+  .fa-comment-alt {
+    padding-right: 8px;
+    position: relative;
+    top: 2px;
+  }
+}
+
+@media only screen and( max-width:768px) {
+  .nav_items {
+    display: none;
+  }
+  .logo {
+    .company_logo_primary {
+      color: #fff;
+      font-family: $font_family;
+      font-size: 12px;
+      font-weight: 900;
+    }
+    .company_logo_secondary {
+      color: $primary_background_color;
+      font-family: $font_family;
+      font-size: 12px;
+      font-weight: 900;
+    }
+  }
+}
