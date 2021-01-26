@@ -6,6 +6,15 @@
   color: #fff;
   text-align: center;
   margin: 20px;
+  @media only screen and( max-width:768px) {
+    width: 87%;
+    margin:  20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-right: 10px;
+    height: 120px;
+  }
 }
 
 #icon {
@@ -13,6 +22,10 @@
   color: $primary_background_color;
   display: block;
   margin-top: 30px;
+  @media only screen and( max-width:768px) {
+    margin: 0;
+    padding: 20px;
+  }
 }
 .title {
   font-size: $heading;
