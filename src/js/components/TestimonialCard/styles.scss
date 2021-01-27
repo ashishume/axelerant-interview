@@ -1,0 +1,31 @@
+.testimonials_card_container {
+  position: relative;
+  text-align: left;
+  color: #000;
+
+  .chat_container {
+    width: 100%;
+  }
+  .text_area {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .description_container {
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: left;
+    .user_icon {
+      width: 30px;
+      height: 30px;
+      padding-left: 80px;
+    }
+    .user_data {
+      display: inline-block;
+      line-height: 0;
+      padding-left: 30px;
+      margin: 0;
+    }
+  }
+}

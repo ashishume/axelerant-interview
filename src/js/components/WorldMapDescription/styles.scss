@@ -1,0 +1,19 @@
+.map_container {
+  position: relative;
+  display: flex;
+  margin: 50px;
+
+  .map_row:first-child {
+    justify-content: left;
+  }
+  .map_row:last-child {
+    justify-content: center;
+  }
+
+  @media only screen and( max-width:768px) {
+    display: block;
+    .image_map {
+      width: 100%;
+    }
+  }
+}
