@@ -1,0 +1,26 @@
+.footer_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: rgba(28, 28, 28, 1);
+  color: #fff;
+  padding: 50px 50px;
+  @media only screen and( max-width:768px) {
+    display: block;
+    text-align: center;
+  }
+  .footer:first-child {
+    flex-grow: 3;
+  }
+  .footer:last-child {
+    text-align: right;
+    flex-grow: 1;
+    @media only screen and( max-width:768px) {
+      text-align: center;
+    }
+
+    .fa {
+      padding: 10px;
+    }
+  }
+}

@@ -68,4 +68,15 @@
       padding: 50px;
     }
   }
+  .submit_button {
+    background-color: $primary_background_color;
+    border-radius: 46px;
+    border: none;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-family: $font_family;
+    box-shadow: 1px 1px 5px 1px gray;
+  }
 }

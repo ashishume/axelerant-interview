@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import ContactForm from "../components/ContactForm";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HeaderBackground from "../components/HeaderBackground";
 import Testimonials from "../components/Testimonials";
@@ -13,6 +14,7 @@ const App = () => {
       <WorldMapDescription />
       <Testimonials />
       <ContactForm />
+      <Footer />
     </Fragment>
   );
 };
