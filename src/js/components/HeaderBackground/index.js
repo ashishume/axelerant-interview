@@ -14,8 +14,8 @@ const HeaderBackground = () => {
             </div>
             <div className="box_container">
               <HeaderCard title="Services" iconName="fa fa-users-cog" />
-              <HeaderCard title="Services" iconName="fa fa-users-cog" />
-              <HeaderCard title="Services" iconName="fa fa-users-cog" />
+              <HeaderCard title="Services" iconName="fas fa-user-cog" />
+              <HeaderCard title="Services" iconName="fas fa-user-lock" />
             </div>
           </div>
         </div>

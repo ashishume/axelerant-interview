@@ -12,6 +12,8 @@
   z-index: 99;
   @media only screen and( max-width:768px) {
     width: 100%;
+    text-align: center;
+    display: block;
   }
 }
 
@@ -28,15 +30,35 @@
     @extend .company_logo_primary;
     color: $primary_background_color;
   }
+  @media only screen and( max-width:768px) {
+    position: relative;
+    top: 30%;
+  }
 }
 
 .navbar {
   margin: 0 50px;
+
+  .small_icons {
+    display: none;
+    @media only screen and( max-width:768px) {
+      display: flex;
+      .fa-bars {
+        z-index: 999999999;
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+  }
+
   .nav_items {
     color: #fff;
     font-size: $sub_heading;
     font-family: $font_family;
     padding: 0 20px;
+    @media only screen and( max-width:768px) {
+      display: none;
+    }
   }
   .get_in_touch {
     @extend .nav_items;
@@ -44,30 +66,36 @@
     padding: 10px;
     border-radius: 50px;
     height: 50px;
+    @media only screen and( max-width:768px) {
+      display: none;
+    }
   }
   .fa-comment-alt {
     padding-right: 8px;
     position: relative;
     top: 2px;
   }
-}
 
-@media only screen and( max-width:768px) {
-  .nav_items {
+  .side_nav_items {
     display: none;
-  }
-  .logo {
-    .company_logo_primary {
+    @media only screen and( max-width:768px) {
+      display: block;
+      padding: 10px;
       color: #fff;
-      font-family: $font_family;
-      font-size: 12px;
-      font-weight: 900;
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 100%;
     }
-    .company_logo_secondary {
-      color: $primary_background_color;
+  }
+  .side_get_in_touch {
+    display: none;
+    @media only screen and( max-width:768px) {
+      display: block;
+      color: #fff;
+      font-size: $sub_heading;
       font-family: $font_family;
-      font-size: 12px;
-      font-weight: 900;
+      background-color: $primary_background_color;
+      padding: 10px;
+      border-radius: 50px;
     }
   }
 }
